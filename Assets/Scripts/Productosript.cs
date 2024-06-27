@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Producto : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
-    public int precio;
-
+    public GameObject[] prodcuctos;
     // Start is called before the first frame update
     void Start()
     {
