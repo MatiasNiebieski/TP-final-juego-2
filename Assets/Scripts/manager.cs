@@ -28,25 +28,7 @@ public class manager : MonoBehaviour
         Instantiate(objetos[index], spawn1.position, Quaternion.identity);
 
         index = Random.Range(0, objetos.Length);
-        Instantiate(objetos[index], spawn2.position, Quaternion.identity);
-
-        precio1 = Random.Range(100, 500);
-        platatext.text = plata + "$";
-
-        int index2 = Random.Range(0, objetos.Length);
-        Instantiate(objetos[index], spawn1.position, Quaternion.identity);
-
-        index = Random.Range(0, objetos.Length);
-        Instantiate(objetos[index], spawn2.position, Quaternion.identity);
-
-        precio2 = Random.Range(100, 500);
-        platatext.text = plata + "$";
-
-        int index3 = Random.Range(0, objetos.Length);
-        Instantiate(objetos[index], spawn1.position, Quaternion.identity);
-
-        index = Random.Range(0, objetos.Length);
-        Instantiate(objetos[index], spawn2.position, Quaternion.identity);
+        Instantiate(objetos[index], spawn2.position, Quaternion.identity);   
 
 
 
