@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class manager : MonoBehaviour
@@ -27,6 +26,12 @@ public class manager : MonoBehaviour
 
     void Start()
     {
+        iniciarJuego();
+    }
+
+    public void iniciarJuego()
+    {
+        pan.SetActive(false);
         obj1 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint1.position, Quaternion.identity);
         obj2 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint2.position, Quaternion.identity);
 

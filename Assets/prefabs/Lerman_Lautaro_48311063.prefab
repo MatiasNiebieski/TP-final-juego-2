@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8778799270075983840}
   - component: {fileID: 8778799270076753856}
   - component: {fileID: 8778799270077883648}
+  - component: {fileID: 114594670108382056}
   m_Layer: 0
   m_Name: Lerman_Lautaro_48311063
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8778799270075694016}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 13.051401, y: 9.236759, z: 10.875777}
-  m_LocalScale: {x: 100, y: 100, z: 9.000004}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &114594670108382056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778799270075694016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ece7630eb0e1e44aa3931a1232119d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precio: 5

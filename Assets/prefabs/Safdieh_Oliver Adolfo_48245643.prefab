@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1557959895132654443}
   - component: {fileID: 1557959895131327307}
   - component: {fileID: 1557959895130229131}
+  - component: {fileID: 114675791899477150}
   m_Layer: 0
   m_Name: Safdieh_Oliver Adolfo_48245643
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1557959895132165963}
   m_LocalRotation: {x: 0.5, y: -0.49999997, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 9.127684, y: 9.943357, z: 13.73147}
-  m_LocalScale: {x: 0.1, y: 2.9379623, z: 0.1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &114675791899477150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557959895132165963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ece7630eb0e1e44aa3931a1232119d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precio: 40
