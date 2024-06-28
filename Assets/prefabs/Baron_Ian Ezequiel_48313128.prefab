@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4920210027700930315}
   - component: {fileID: 4920210027699603243}
   - component: {fileID: 4920210027698505195}
-  - component: {fileID: 6172309794627144144}
   m_Layer: 0
   m_Name: Baron_Ian Ezequiel_48313128
   m_TagString: Untagged
@@ -78,16 +77,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &6172309794627144144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920210027700706091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c5a15deebd91844fa50f2df24fe21c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  precio: 15

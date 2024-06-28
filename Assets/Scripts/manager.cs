@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
-public class Manager : MonoBehaviour
-
+public class manager : MonoBehaviour
 {
     public Transform spawnPoint1;
     public Transform spawnPoint2;
@@ -17,94 +17,88 @@ public class Manager : MonoBehaviour
     GameObject obj2;
 
     public Text presupuesto;
-    public Text pr1;
-    public Text pr2;
+    public Text pre1;
+    public Text pre2;
 
-    public GameObject panel;
-    public Text resultado;
+    public GameObject pan;
+    public Text result;
 
     private int sumaProductos;
 
     void Start()
     {
         obj1 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint1.position, Quaternion.identity);
-
-
         obj2 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint2.position, Quaternion.identity);
 
-        int pre1 = obj1.GetComponent<ProductoScript>().precio; // falta corregir
+        int costo1 = obj1.GetComponent<Productoscript>().precio;
+        int costo2 = obj2.GetComponent<Productoscript>().precio;
 
-
-        int pre2 = obj2.GetComponent<ProductoScript>().precio; // falta corregir
-
-        sumaProductos = pre1 + pre2;
-
+        sumaProductos = costo1 + costo2;
         dinero = Random.Range(10, 100);
-
         presupuesto.text = $"Presupuesto: ${dinero}";
-        pr1.text = $"${pr1}";
-        pr2.text = $"${pr2}";
+        pre1.text = $"${costo1}";
+        pre2.text = $"${costo2}";
     }
 
-    void Verprecio(int a)
+    void revisar(int a)
     {
-        panel.SetActive(true);
-
+        pan.SetActive(true);
         if (a == 1)
         {
             if (dinero > sumaProductos)
             {
-                
-                resultado.text = "Compraste";
+               
+                result.text = "Ganaste";
             }
             else
             {
                 
-                resultado.text = "No alcanza";
+                result.text = "Perdiste";
             }
         }
         else if (a == 2)
         {
             if (dinero == sumaProductos)
             {
-               
-                resultado.text = "Compraste";
+              
+                result.text = "Ganaste";
             }
             else
             {
-                
-                resultado.text = "No alcanza";
+             
+                result.text = "Perdiste";
             }
         }
         else if (a == 3)
         {
             if (dinero < sumaProductos)
             {
-              
-                resultado.text = "Compraste";
+                
+                result.text = "Ganaste";
             }
             else
             {
-          
-                resultado.text = "No Alcanza";
+                
+                result.text = "Perdiste";
             }
         }
     }
 
-    public void ExcederValor()
+    public void saldovuelt()
     {
-        Debug.Log("Sobra");
-        Verprecio(1);
+        Debug.Log("comprado y vuelto");
+        revisar(1);
     }
 
-    public void Alcanza()
+    public void saldosuf()
     {
-        Debug.Log("Le alcanza para el producto");
-        Verprecio(2);
+        Debug.Log("Comprado");
+        revisar(2);
     }
 
-    public void NoLlega()
+    public void saldoins()
     {
-        Verprecio(3);
+        Debug.Log("no es posible Comprarlo");
+        revisar(3);
     }
 }
