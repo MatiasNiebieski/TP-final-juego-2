@@ -29,8 +29,9 @@ public class manager : MonoBehaviour
         iniciarJuego();
     }
 
-    public void iniciarJuego()
+    public void iniciarJuego() // no encontramos el error.
     {
+        
         pan.SetActive(false);
         obj1 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint1.position, Quaternion.identity);
         obj2 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint2.position, Quaternion.identity);
