@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1865379152662378459}
   - component: {fileID: 1865379152663181307}
   - component: {fileID: 1865379152664278331}
+  - component: {fileID: 114106233193680678}
   m_Layer: 0
   m_Name: Grynfeld_Matias_48519558
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1865379152662342651}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.26628, y: 11.163597, z: 13.6565}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 12, y: 12, z: 12}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &114106233193680678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865379152662342651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ece7630eb0e1e44aa3931a1232119d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precio: 45

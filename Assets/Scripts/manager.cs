@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class manager : MonoBehaviour
@@ -27,6 +26,14 @@ public class manager : MonoBehaviour
 
     void Start()
     {
+        iniciarJuego();
+    }
+
+    public void iniciarJuego() // no encontramos el error.
+    {
+
+        
+        pan.SetActive(false);
         obj1 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint1.position, Quaternion.identity);
         obj2 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint2.position, Quaternion.identity);
 
@@ -101,4 +108,26 @@ public class manager : MonoBehaviour
         Debug.Log("no es posible Comprarlo");
         revisar(3);
     }
+    void desactivar()
+    {
+        Destroy(obj1.gameObject);
+        Destroy(obj2.gameObject);
+    }
+   public  void reintentar()
+    {
+        desactivar();
+        pan.SetActive(false);
+        obj1 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint1.position, Quaternion.identity);
+        obj2 = Instantiate(productos[Random.Range(0, productos.Length)], spawnPoint2.position, Quaternion.identity);
+
+        int costo1 = obj1.GetComponent<Productoscript>().precio;
+        int costo2 = obj2.GetComponent<Productoscript>().precio;
+
+        sumaProductos = costo1 + costo2;
+        dinero = Random.Range(10, 100);
+        presupuesto.text = $"Presupuesto: ${dinero}";
+        pre1.text = $"${costo1}";
+        pre2.text = $"${costo2}";
+    }
+
 }
